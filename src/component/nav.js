@@ -23,15 +23,30 @@ const Nav = () => {
           <Link to="/productUpdate">Update Products </Link>
         </li>
 
-        <li>
-          {auth ? 
+        {/* <li>
+          {auth ? (
             <Link onClick={Logout} to="/signup">
               Logout
             </Link>
-           : 
+          ) : (
             <Link to="/signup">Create Account </Link>
-          }
-        </li>
+          )}
+        </li> */}
+        {auth ? (
+          <Link onClick={Logout} to="/signup">
+            Logout
+          </Link>
+        ) : (
+          <> 
+          {/* frgmentation  */}
+            <li>
+              <Link to="/signup">Create Account </Link>
+            </li>
+            <li>
+              <Link to="/login">Login </Link>
+            </li>
+          </>
+        )}
       </ul>
     </div>
   );

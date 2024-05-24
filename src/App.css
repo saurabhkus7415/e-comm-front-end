@@ -68,6 +68,10 @@
 .register {
   margin-left: 25%;
 }
+.login {
+  margin-left: 30%;
+  margin-top: 100px;
+}
 .register-button {
   margin: 25px;
   padding: 10px;
